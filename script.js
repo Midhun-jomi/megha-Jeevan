@@ -191,6 +191,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Animate transition to success block
             rsvpForm.style.opacity = '0';
+
+            // Send email notification via FormSubmit
+            fetch("https://formsubmit.co/ajax/mjcmidhun@gmail.com", {
+                method: "POST",
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    Name: name,
+                    Email: email,
+                    Wishes: wishes || "No message left.",
+                    _subject: `New Wedding RSVP from ${name}!`
+                })
+            })
+                .then(response => response.json())
+                .then(data => console.log("Email sent successfully:", data))
+                .catch(error => console.error("Error sending email:", error));
+
             setTimeout(() => {
                 rsvpForm.classList.add('hidden');
                 rsvpSuccess.classList.remove('hidden');
