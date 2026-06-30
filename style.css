@@ -685,6 +685,23 @@ h4 {
     line-height: 1.6;
 }
 
+.event-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.event-actions .btn {
+    padding: 10px 20px;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    flex: 1;
+    min-width: 140px;
+    white-space: nowrap;
+}
+
 .mt-2 {
     margin-top: 15px !important;
 }
