@@ -57,7 +57,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (countdownElement) {
         const targetDateString = countdownElement.getAttribute('data-date');
-        const targetDate = new Date(targetDateString).getTime();
+        // Convert ISO format YYYY-MM-DDTHH:MM:SS to YYYY/MM/DD HH:MM:SS for cross-browser (Safari) compatibility
+        const safeDateString = targetDateString.replace(/-/g, '/').replace('T', ' ');
+        const targetDate = new Date(safeDateString).getTime();
 
         const updateCountdown = () => {
             const now = new Date().getTime();
@@ -194,4 +196,5 @@ document.addEventListener('DOMContentLoaded', () => {
                 rsvpSuccess.classList.remove('hidden');
             }, 400);
         });
-    });
+    }
+});
