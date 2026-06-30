@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Megha & Jeevan - Wedding Celebration</title>
+
+    <!-- Meta tags for SEO & Sharing -->
+    <meta name="description"
+        content="Welcome to the wedding website of Megha and Jeevan. Join us in celebrating our love on August 30, 2026. Find details, RSVP, and share your wishes!">
+    <meta property="og:title" content="Megha & Jeevan's Wedding Website">
+    <meta property="og:description"
+        content="Save the Date: 30th August 2026. We request your gracious presence and prayers.">
+    <meta property="og:image" content="./assets/hero_couple1.webp">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Main Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Ambient Background Music -->
+    <div class="music-player-container" id="music-player">
+        <audio id="bg-audio" loop>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <button class="music-toggle-btn" id="music-toggle" aria-label="Toggle Background Music">
+            <i class="fas fa-music"></i>
+            <span class="music-pulse"></span>
+        </button>
+    </div>
+
+    <!-- Hero Section (Full Size Photo) -->
+    <header class="hero-section" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-subtitle animate-up">SAVE THE DATE</p>
+            <h1 class="hero-title animate-fade">Megha <span class="ampersand">&</span> Jeevan</h1>
+            <p class="hero-date animate-up">30 . 08 . 2026</p>
+            <div class="scroll-indicator" id="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Quote Section & Pinterest Cartoon Image -->
+        <section class="quote-section" id="quote-section">
+            <div class="container">
+                <div class="gold-lace-divider top"></div>
+                <div class="quote-container">
+                    <p class="bible-quote">
+                        “Set me as a seal upon your heart, as a seal upon your arm;<br>
+                        for love is strong as death...”
+                    </p>
+                    <p class="bible-reference">— Song of Solomon 8:6–7</p>
+                </div>
+
+                <!-- Pinterest-style Cartoon Illustration -->
+                <div class="illustration-container">
+                    <div class="watercolor-bg-glow"></div>
+                    <img src="./assets/couple_illustration1.png" alt="Megha and Jeevan Illustration"
+                        class="couple-illustration" id="couple-illus">
+                </div>
+                <div class="gold-lace-divider bottom"></div>
+            </div>
+        </section>
+
+        <!-- The Couple & Parent Introductions -->
+        <section class="couple-section" id="couple-details">
+            <div class="watercolor-splash top-left"></div>
+            <div class="watercolor-splash bottom-right"></div>
+            <div class="container">
+                <h2 class="section-title">The Bride & The Groom</h2>
+                <div class="couple-grid">
+                    <!-- Bride Card -->
+                    <div class="couple-card bride-card">
+                        <div class="card-border-gold"></div>
+                        <h3 class="partner-name">Megha</h3>
+                        <p class="family-relation">Daughter of</p>
+                        <p class="parent-names">Mrs. Bindu Mathew M <br>& Mr. Jomi C J</p>
+                        <p class="family-address">Chathanattu, Pala, Kottayam</p>
+                    </div>
+
+                    <!-- Ampersand Divider -->
+                    <div class="grid-connector">
+                        <span class="cursive-and">&</span>
+                    </div>
+
+                    <!-- Groom Card -->
+                    <div class="couple-card groom-card">
+                        <div class="card-border-gold"></div>
+                        <h3 class="partner-name">Jeevan</h3>
+                        <p class="family-relation">Son of</p>
+                        <p class="parent-names">Mrs. Leelama Joseph <br>& Mr. Joseph Thomas</p>
+                        <p class="family-address">Elevumkunnel, Pala, Kottayam</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Event Details (Cards) -->
+        <section class="events-section" id="events">
+            <div class="container">
+                <h2 class="section-title text-gold">Wedding Events</h2>
+                <p class="section-subtitle">We request your gracious presence and prayers on our special days</p>
+
+                <div class="events-grid">
+                    <!-- Engagement Event -->
+                    <div class="event-card animate-scroll">
+                        <div class="event-header-bg"></div>
+                        <div class="event-card-inner">
+                            <div class="event-icon"><i class="fas fa-ring"></i></div>
+                            <h3 class="event-title">Engagement</h3>
+                            <div class="event-time-date">
+                                <p class="event-date"><i class="far fa-calendar-alt"></i> 24 . 08 . 2026</p>
+                                <p class="event-time"><i class="far fa-clock"></i> 5:45 PM</p>
+                            </div>
+                            <div class="event-venue">
+                                <h4>Ceremony:</h4>
+                                <p>St. Thomas Cathedral Church, Pala</p>
+                                <h4 class="mt-2">Reception:</h4>
+                                <p>Bishop Vayalil Hall</p>
+                            </div>
+                            <div class="event-actions">
+                                <a href="https://maps.google.com/?q=St.+Thomas+Cathedral+Church,+Pala" target="_blank"
+                                    class="btn btn-gold-outline"><i class="fas fa-map-marker-alt"></i> View on Map</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Wedding Event -->
+                    <div class="event-card animate-scroll">
+                        <div class="event-header-bg font-wedding"></div>
+                        <div class="event-card-inner">
+                            <div class="event-icon"><i class="fas fa-church"></i></div>
+                            <h3 class="event-title">Wedding</h3>
+                            <div class="event-time-date">
+                                <p class="event-date"><i class="far fa-calendar-alt"></i> 30 . 08 . 2026</p>
+                                <p class="event-time"><i class="far fa-clock"></i> 4:30 PM</p>
+                            </div>
+                            <div class="event-venue">
+                                <h4>Ceremony:</h4>
+                                <p>St. Thomas Syro-Malabar Church</p>
+                                <h4 class="mt-2">Reception:</h4>
+                                <p>Sunstar Convention Centre Pala</p>
+                            </div>
+                            <div class="event-actions">
+                                <a href="https://maps.google.com/?q=Sunstar+Convention+Centre+Pala" target="_blank"
+                                    class="btn btn-gold-outline"><i class="fas fa-map-marker-alt"></i> View on Map</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Countdown Timer -->
+        <section class="countdown-section" id="countdown-section">
+            <div class="countdown-overlay"></div>
+            <div class="container">
+                <h2 class="section-title">Counting Down To The Big Day</h2>
+                <div class="countdown-container" id="countdown" data-date="2026-08-30T16:30:00">
+                    <div class="countdown-box">
+                        <span class="countdown-value" id="days">00</span>
+                        <span class="countdown-label">Days</span>
+                    </div>
+                    <div class="countdown-divider">:</div>
+                    <div class="countdown-box">
+                        <span class="countdown-value" id="hours">00</span>
+                        <span class="countdown-label">Hours</span>
+                    </div>
+                    <div class="countdown-divider">:</div>
+                    <div class="countdown-box">
+                        <span class="countdown-value" id="minutes">00</span>
+                        <span class="countdown-label">Mins</span>
+                    </div>
+                    <div class="countdown-divider">:</div>
+                    <div class="countdown-box">
+                        <span class="countdown-value" id="seconds">00</span>
+                        <span class="countdown-label">Secs</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RSVP Form Section -->
+        <section class="rsvp-section" id="rsvp">
+            <div class="watercolor-splash left-splash"></div>
+            <div class="container">
+                <div class="rsvp-card-wrapper">
+                    <div class="rsvp-form-container">
+                        <h2 class="section-title text-gold">Join Our Celebration</h2>
+                        <p class="section-subtitle">Please respond by August 15, 2026</p>
+
+                        <form id="rsvp-form" class="rsvp-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="guest-name">Full Name</label>
+                                    <input type="text" id="guest-name" required placeholder="Enter your name">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="guest-email">Email Address</label>
+                                    <input type="email" id="guest-email" required placeholder="Enter your email">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="wishes">Wishes or Special Notes (Optional)</label>
+                                    <textarea id="wishes" rows="3"
+                                        placeholder="Leave a sweet message for Megha & Jeevan..."></textarea>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-gold btn-block">Send Response</button>
+                        </form>
+
+                        <!-- Success Message -->
+                        <div class="rsvp-success-message hidden" id="rsvp-success">
+                            <i class="fas fa-heart rsvp-heart-icon"></i>
+                            <h3>Thank You!</h3>
+                            <p>Your RSVP response has been successfully sent. We look forward to celebrating with you!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Guestbook Wishes Section -->
+        <section class="guestbook-section" id="guestbook">
+            <div class="container">
+                <h2 class="section-title">Wishes & Blessings</h2>
+                <p class="section-subtitle">Read what our friends and family have shared, or leave a note of your own!
+                </p>
+
+                <div class="wishes-board" id="wishes-board">
+                    <!-- Wishes will load dynamically here -->
+                    <div class="wish-card default-wish">
+                        <p class="wish-text">"Wishing you both a lifetime of love, laughter, and endless happiness! So
+                            excited for the wedding!"</p>
+                        <p class="wish-author">— Sarah & Keith</p>
+                    </div>
+                    <div class="wish-card default-wish">
+                        <p class="wish-text">"May God bless your union with peace and joy. Congratulations, Megha and
+                            Jeevan!"</p>
+                        <p class="wish-author">— Joseph & Family</p>
+                    </div>
+                    <div class="wish-card default-wish">
+                        <p class="wish-text">"Cheers to the beautiful couple! Looking forward to celebrating this
+                            beautiful day with you."</p>
+                        <p class="wish-author">— Rahul & Neha</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container text-center">
+            <p class="footer-title">Megha & Jeevan</p>
+            <p class="footer-compliments">Best Compliments From</p>
+            <p class="footer-names">Midhun & Mathews</p>
+            <div class="footer-divider"></div>
+            <p class="footer-copy">&copy; 2026 Megha & Jeevan Wedding.</p>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript Logic -->
+    <script src="script.js"></script>
+</body>
+
+</html>
