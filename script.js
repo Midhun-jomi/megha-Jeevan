@@ -195,4 +195,44 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 400);
         });
     }
+
+    // -------------------------------------------------------------
+    // Mobile Navigation Menu Toggle & Scroll Effects
+    // -------------------------------------------------------------
+    const navToggle = document.getElementById('nav-toggle');
+    const navClose = document.getElementById('nav-close');
+    const navMenu = document.getElementById('nav-menu');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    if (navToggle && navMenu) {
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.add('show-menu');
+        });
+    }
+
+    if (navClose && navMenu) {
+        navClose.addEventListener('click', () => {
+            navMenu.classList.remove('show-menu');
+        });
+    }
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (navMenu) {
+                navMenu.classList.remove('show-menu');
+            }
+        });
+    });
+
+    // Sticky header scroll shadow
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+        if (navbar) {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scroll-header');
+            } else {
+                navbar.classList.remove('scroll-header');
+            }
+        }
+    });
 });
